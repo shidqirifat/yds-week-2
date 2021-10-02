@@ -1,0 +1,336 @@
+:root {
+    --more-red: hsla(7, 99%, 70%, 0.3);
+    --more-red-hover: hsla(7, 99%, 70%, 0.5);
+    --more-yellow: hsla(51, 100%, 49%, 0.5);
+    --more-yellow-hover: hsla(51, 100%, 49%, 1.1);
+    --btn-yellow: hsla(51, 100%, 49%);
+    --graphic-cyan: hsl(167, 40%, 24%);
+    --photography-blue: hsl(198, 62%, 26%);
+    --link-cyan: hsl(168, 34%, 41%);
+    --footer-cyan: #95D6C9; 
+    --testimony-blue: hsl(213, 9%, 39%);
+    --content-blue: hsl(232, 10%, 55%);
+    --btn-white: hsl(0, 0%, 100%);
+
+    --font-title: "Fraunces", serif;
+    --font-secondary: "Barlow", serif;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-secondary);
+}
+
+header {
+    height: 100vh;
+    background: url(./images/desktop/image-header.jpg) center/cover no-repeat;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.nav-desktop {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.logo {
+    height: 23px;
+}
+
+.nav-desktop a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+
+.nav-desktop a:hover {
+    text-decoration: underline;
+}
+
+.btn-contact {
+    background-color: var(--btn-yellow);
+    border-radius: 20px;
+    text-transform: uppercase;
+    padding: 0.7rem 1.5rem;
+    cursor: pointer;
+    border: none;
+    font-family: var(--font-title);
+    color: black;
+}
+
+.btn-contact:hover {
+    background-color: var(--btn-white);
+}
+
+.header-content {
+    height: 100%;
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header-content h2 {
+    font-size: 4.5rem;
+    color: white;
+    font-family: var(--font-title);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: 900;
+    margin: 0;
+}
+
+.header-content .arrow-down {
+    margin-top: 2rem;
+}
+
+.contents {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.content-text {
+    align-self: center;
+    padding: 2rem 6rem;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    text-align: left;
+}
+
+.content-title {
+    font-family: var(--font-title);
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.content-paragraph {
+    font-family: var(--font-secondary);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: var(--content-blue);
+}
+
+.content-more {
+    font-family: var(--font-title);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    cursor: pointer;
+}
+
+.content-more::before {
+    content: '';
+    width: 14vw;
+    height: 8px;
+    position: absolute;
+    bottom: 2px;
+    border-radius: 5px;
+    z-index: -10;
+    background-color: var(--more-yellow);
+}
+
+.content-more:hover::before {
+    background-color: var(--more-yellow-hover);
+}
+
+.content-img {
+    width: 50%;
+}
+
+.content:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.content:nth-child(2) .content-more::before {
+    background-color: var(--more-red);
+}
+
+.content:nth-child(2) .content-more:hover::before {
+    background-color: var(--more-red-hover);
+}
+
+.special {
+    height: 600px;
+    width: 50%;
+    padding: 0 2rem;
+    text-align: center;
+    align-items: center;
+}
+
+.special-content-graphic {
+    color: var(--graphic-cyan);
+    background: url(./images/desktop/image-graphic-design.jpg) center no-repeat;
+}
+
+.special-text {
+    margin-top: 340px;
+    display: flex;
+    flex-direction: column;
+}
+
+.special-title {
+    font-family: var(--font-title);
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.special-paragraph {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.special-content-photography {
+    color: var(--photography-blue);
+    background: url(./images/desktop/image-photography.jpg) center no-repeat;
+}
+
+.testimony-container {
+    padding: 5rem 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimony-title {
+    font-family: var(--font-title);
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: var(--content-blue);
+    margin-bottom: 3rem;
+    margin-top: 0;
+}
+
+.testimony-details {
+    display: flex;
+    gap: 2rem;
+    text-align: center;
+}
+
+.testimony-detail {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.testimony-img {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+
+.testimony-paragraph {
+    font-size: 1.25rem;
+    margin: 1.5rem 0;
+    color: var(--testimony-blue);
+    line-height: 1.5;
+}
+
+.testimony-user {
+    font-family: var(--font-title);
+    margin-bottom: 0.5rem;
+    font-weight: 900;
+    font-size: 1.25rem;
+    margin-top: 0;
+}
+
+.testimony-position {
+    font-size: 1.1rem;
+    color: var(--content-blue);
+    margin: 0;
+}
+
+.galery {
+    display: flex;
+}
+
+.galery img {
+    width: 25%;
+    height: 100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--footer-cyan);
+    padding: 5rem 0;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-container path {
+    fill: rgb(44, 117, 102);
+    fill-rule: nonzero;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    justify-content: center;
+}
+
+.footer-nav a {
+    color: var(--link-cyan);
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+.footer-nav a:hover {
+    color: white;
+}
+
+.social-container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.social-container img {
+    cursor: pointer;
+}
+
+.social-container img:hover {
+    filter:  brightness(0) invert(1);
+}
+
+.profile p {
+    margin: 10px 0;
+    text-align: center;
+    color: var(--link-cyan);
+}
+
+.my-name {
+    font-size: 1.1rem;
+}
