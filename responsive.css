@@ -1,1 +1,116 @@
 /* Berisi file style untuk responsive */
+@media screen and (max-width: 375px) {
+    .nav-desktop {
+        display: none;
+    }
+
+    .logo {
+        height: 23px;
+    }
+
+    .btn-hamburger {
+        display: block;
+    }
+
+    .header-content h2 {
+        font-size: 2.6rem;
+        text-align: center;
+    }
+
+    .content, .content:nth-child(2) {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .content-img {
+        width: 100%;
+        max-height: 600px;
+    }
+
+    .content-text {
+        padding: 3rem 2rem;
+        width: 100%;
+        box-sizing: border-box;
+        align-items: center;
+        text-align: center;
+    }
+
+    .content-title {
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .content-paragraph, .testimony-paragraph, .special-paragraph, .testimony-user {
+        font-size: 18px;
+    }
+
+    .content-more {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .content-more::before {
+        width: 100%;
+    }
+
+    .content-special {
+        flex-direction: column;
+    }
+
+    .special {
+        width: 100%;
+        padding: 0;
+        height: 600px;
+    }
+
+    .special-text {
+        margin-top: 310px;
+        padding: 3rem 2rem;
+    }
+
+    .special-title {
+        font-size: 2rem;
+    }
+
+    .special-content-graphic {
+        background: url(./images/mobile/image-graphic-design.jpg) cover top;
+        width: 100%;
+        color: var(--graphic-cyan);
+    }
+
+    .special-content-photography {
+        background: url(./images/mobile/image-photography.jpg) cover top;
+        width: 100%;
+    }
+
+    .testimony-title {
+        font-size: 1.1rem;
+        letter-spacing: 5px;
+        text-align: center;
+    }
+
+    .testimony-details {
+        flex-direction: column;
+    }
+
+    .testimony-position {
+        font-size: 0.9rem;
+    }
+
+    .galery {
+        flex-wrap: wrap;
+    }
+
+    .galery img {
+        width: 50%;
+        height: 50vw;
+    }
+
+    .profile {
+        width: 70%;
+    }
+
+    .my-name {
+        font-size: 1rem;
+    }
+}
